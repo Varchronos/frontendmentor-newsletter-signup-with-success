@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  background-color: #36384d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: white;
+  display: flex;
+  font-size: 16px;
+  border-radius: 1.5em;
+  width: (400px, 90vw, 780px);
+}
+
+.container_main{
+  flex-basis: 100%;
+  padding: 0 1.6em 0 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4em;
+}
+
+.container_main p,li{
+  font-size: 0.8em;
+  color: #222442;
+}
+.container_main h1{
+  font-size: 2.75em;
+  color: #222442;
+  margin-bottom: 0.6em;
+}
+
+.container_main p{
+margin-bottom: 1.5em;
+line-height: 1.5em;
+}
+
+.container_main ul{
+  display: flex;
+  flex-direction: column;
+  gap:0.75em
+}
+.container_main_listgroup{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.container_main li{
+  list-style-type: none;
+}
+
+.container_main_form{
+  padding: 1.2em 2em 1.2em 0.2em;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.input_group{
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.2em;
+}
+
+.input_group label{
+  font-weight: bold;
+  color: #222442;
+  font-size: 0.75em;
+  line-height: 2.75em;
+}
+
+.input_group input{
+  padding: 1.2em;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: 1px #c9c9c9 solid ;
+}
+
+.container_main_form button{
+  margin-top: 1.25em;
+  background-color: #222442;
+  color: white;
+  padding: 1.2em;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border:1px #222442 solid;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+.container_image{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+padding: 1.25rem 1.25rem 1.25rem 0;
+padding-left: 0;
+}
+
+.container_image img{
+  max-height: 500px;
+}
+
+@media screen and (max-width:800px)
+{
+  body{
+    /* background-color: white; */
+    /* justify-content: unset;
+    align-items: unset; */
+  }
+    .container{
+      flex-direction:column-reverse;
+      width: min(500px, 100vw);
+      border-radius: 0;
+      justify-content: flex-end;
+    }
+    .container_image{
+      padding:0;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-basis: unset;
+    }
+
+    .container_image img{
+      content: url(./assets/banner_mobile.svg);
+    }
+   
+    .container_main{
+      padding: 2.5rem;
+      flex-basis: unset;
+    }
+
+    .input_group{
+      padding:0;
+    }
+    .container_main_form{
+      padding: 1.2em 0;
+    }
+}
+@media screen and (max-width:500px) {
+  body{
+    background-color: white; 
+     justify-content: unset;
+    align-items: unset;
+  }
+}
+
+
+/* Index.js */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  background-color: #36384d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+@media screen and (max-width:500px) {
+  body{
+    background-color: white; 
+    justify-content: unset;
+    align-items: unset;
+  }
+} */

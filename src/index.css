@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+}
+#root{
+  height: 100%;
+  width: 100%;
+  background-color: #36384d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:500px) {
+  #root{
+    background-color: white; 
+    justify-content: unset;
+    align-items: unset;
+  }
+}
