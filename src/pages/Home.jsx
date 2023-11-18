@@ -27,18 +27,24 @@ const Home = () => {
                         <h1>Stay Updated!</h1>
                         <p>Join 60,000+ product managers receiving monthly updates on:</p>
                         <ul>
+                            <li>
+                                <div className="container_main_listgroup">
+                                    <img src={listIcon} alt="icon" />
+                                    Product discovery and building what matters
+                                </div>
+                            </li>
+                            <li>
                             <div className="container_main_listgroup">
                                 <img src={listIcon} alt="icon" />
-                                <li>Product discovery and building what matters</li>
+                                Measuring to ensure updates are a success
                             </div>
+                            </li>
+                            <li>
                             <div className="container_main_listgroup">
                                 <img src={listIcon} alt="icon" />
-                                <li>Measuring to ensure updates are a success</li>
+                                And much more!
                             </div>
-                            <div className="container_main_listgroup">
-                                <img src={listIcon} alt="icon" />
-                                <li>And much more!</li>
-                            </div>
+                            </li>
                         </ul>
                     </div>
                     <form className="container_main_form" onSubmit={submitHandeler}>
@@ -47,9 +53,9 @@ const Home = () => {
                                 <label htmlFor="email">Email Address</label>
                                 {!emailStatus && <span className='invalid_input'>Invalid Email!</span>}
                             </div>
-                            <input type="text" name='email' id='email'  className={`email_input ${emailStatus?'':'invalid'}`} placeholder='email@company.com' ref={email} />
+                            <input type="text" name='email' id='email' className={`email_input ${emailStatus ? '' : 'invalid'}`} placeholder='email@company.com' ref={email} />
                             <button type='submit' >Subscribe to my monthly newsletter</button>
-                            
+
                         </div>
                     </form>
                 </div>
