@@ -54,6 +54,7 @@ line-height: 1.2rem;
     font-weight: 700;
     cursor: pointer;
     margin-bottom: 0.5rem;
+    transition: all .2s ease-in-out;
 }
 
 
@@ -69,6 +70,16 @@ line-height: 1.2rem;
 .container_success_main button{
    margin-top: 20rem;
 }
+}
 
+.container_success_main button:hover{
+    background: rgb(255, 86, 122);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 86, 122, 1) 0%,
+    rgba(255, 104, 63, 1) 100%
+  );
+  border: 1px rgb(255, 86, 122) solid;
+  transform: scale(1.1);
 }
 
